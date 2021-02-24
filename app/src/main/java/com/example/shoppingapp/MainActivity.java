@@ -8,6 +8,8 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
     private ListView listView;
+    String[] listName = new String[]{"abeer", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor", "tanvire", "mahinoor"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,13 +17,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         listView = findViewById(R.id.listview);
-        String[] listName = new String[] {"abeer","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor","tanvire", "mahinoor"};
 
-        ArrayAdapter <String> arrayAdapter = new ArrayAdapter<String >(MainActivity.this,R.layout.item_view,R.id.textView,listName);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(MainActivity.this, R.layout.item_view, R.id.textView, listName);
         listView.setAdapter(arrayAdapter);
-
-
-
 
 
     }
