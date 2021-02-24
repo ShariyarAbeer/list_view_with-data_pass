@@ -2,7 +2,9 @@ package com.example.shoppingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -27,7 +29,15 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this,"clicked!!" + position,Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this,"clicked!!" + parent.getItemAtPosition(position),Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(MainActivity.this,DataPass.class);
+                intent.putExtra("data",listName[position]);
+                startActivity(intent);
+
+
+
+
             }
         });
 
